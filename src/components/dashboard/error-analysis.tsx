@@ -19,6 +19,9 @@ interface ErrorAnalysisProps {
 }
 
 export function ErrorAnalysis({ errors, loading = false }: ErrorAnalysisProps) {
+  // Blueprint: Gráfico de donut que muestra distribución de errores por tipo
+  // Incluye una lista detallada con porcentajes
+  
   if (loading) {
     return (
       <Card>

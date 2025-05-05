@@ -38,6 +38,9 @@ export function ProgressChart({
   data,
   loading = false,
 }: ProgressChartProps) {
+  // Blueprint: Gráfico de línea que muestra el progreso por tema
+  // Muestra el nivel de dominio para cada tema estudiado
+  
   if (loading) {
     return (
       <Card>
@@ -48,7 +51,7 @@ export function ProgressChart({
           )}
         </CardHeader>
         <CardContent>
-          <div className="h-64 animate-pulse bg-muted/50" data-testid="loading-placeholder" />
+          <div className="h-64 animate-pulse bg-muted/50" />
         </CardContent>
       </Card>
     );

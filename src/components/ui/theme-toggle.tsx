@@ -4,6 +4,9 @@ import { useEffect } from "react";
 import { Button } from "./button";
 
 export function ThemeToggle() {
+  // Blueprint: Componente para cambiar entre temas claro y oscuro
+  // Sincroniza con preferencias del sistema y persiste en localStorage
+  
   const { theme, setTheme } = useThemeStore();
   
   // Aplicar clase dark al elemento html cuando el tema es dark

@@ -21,8 +21,11 @@ export function MetricCard({
   trend,
   className,
 }: MetricCardProps) {
+  // Blueprint: Tarjeta de métrica con título, valor principal, descripción opcional e icono
+  // Incluye indicador de tendencia opcional (positiva/negativa)
+  
   return (
-    <Card className={cn("overflow-hidden", className)} data-testid="loading-placeholder">
+    <Card className={cn("overflow-hidden", className)}>
       <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
         <CardTitle className="text-sm font-medium">{title}</CardTitle>
         {icon && <div className="h-4 w-4 text-muted-foreground">{icon}</div>}

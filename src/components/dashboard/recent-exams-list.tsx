@@ -12,6 +12,9 @@ interface RecentExamsListProps {
 }
 
 export function RecentExamsList({ exams, loading = false }: RecentExamsListProps) {
+  // Blueprint: Lista de exámenes recientes con título, fecha y puntuación
+  // Cada examen es un enlace a la página de detalle
+  
   if (loading) {
     return (
       <Card>

@@ -8,6 +8,9 @@ interface MetricsGridProps {
 }
 
 export function MetricsGrid({ metrics, loading = false }: MetricsGridProps) {
+  // Blueprint: Grid responsivo de tarjetas de métricas para el dashboard
+  // Muestra 4 métricas principales del estudiante
+  
   if (loading) {
     return (
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
